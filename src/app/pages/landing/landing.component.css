@@ -1,3 +1,19 @@
 .img-test{
   color: blueviolet;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
