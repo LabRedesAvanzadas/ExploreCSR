@@ -1,12 +1,10 @@
 <app-navbar></app-navbar>
 <main>
   <div
-    class="relative pt-16 pb-32 flex content-center items-center justify-center"
-    style="min-height: 75vh;"
+    class="relative pt-16 pb-32 flex content-center items-center justify-center min-75"
   >
     <div
-      class="absolute top-0 w-full h-full bg-center bg-cover"
-      style='background-image: url("../../../assets/img/bg-top.svg") ;'
+      class="absolute top-0 w-full h-full bg-center bg-cover bg-svg"
     >
       <span
         id="blackOverlay"
@@ -18,9 +16,9 @@
         <div class="w-full lg:w-6/10 px-4 ml-auto mr-auto text-center">
           <div class="">
             <div class="logo-container">
-              <img style="object-fit: contain; height: 75px" src="assets/img/logo-espol-blanco.png">
+              <img class="img-fit" src="assets/img/logo-espol-blanco.png">
               <h1 class="text-white font-semibold text-3xl ml-4 mr-4">&</h1>
-              <img style="object-fit: contain; height: 55px"  src="assets/img/google_research_colorful.png">
+              <img class="img-fit-55"  src="assets/img/google_research_colorful.png">
             </div>
 
 
@@ -38,8 +36,7 @@
       </div>
     </div>
     <div
-      class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-      style="height: 70px;"
+      class="h-70 top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
     >
       <svg
         class="absolute bottom-0 overflow-hidden"
@@ -184,7 +181,7 @@
             class="font-bold text-gray-800 mt-8"
             >Inscríbete!</a
           >
-          <div class="flex flex-wrap mt-12 justify-center" style="justify-content: space-around">
+          <div class="flex flex-wrap mt-12 justify-center space-around" >
             <div class="w-full lg:w-6/12 px-4 text-center">
               <div
                 class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
@@ -194,7 +191,7 @@
               <h3 class="text-xl mt-5 font-bold">
                 Quiénes
               </h3>
-              <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+              <p class="mt-2 mb-4 text-gray-500 txt-justify">
                 Estudiantes de cualquier facultad con interés en la investigación en ML/AI
               </p>
             </div>
@@ -207,7 +204,7 @@
               <h3 class="text-xl mt-5 font-bold">
                 Cuantos
               </h3>
-              <p class="mt-2 mb-4 text-gray-500" style="text-align: center;">
+              <p class="mt-2 mb-4 text-gray-500 txt-center">
                 100 Estudiantes
               </p>
             </div>
@@ -227,8 +224,7 @@
                 preserveAspectRatio="none"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 583 95"
-                class="absolute left-0 w-full block"
-                style="height: 95px; top: -94px;"
+                class="absolute left-0 w-full block svg1"
               >
                 <polygon
                   points="-30,95 583,95 583,65"
@@ -249,8 +245,7 @@
   </section>
   <section class="relative py-20">
     <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-      style="height: 80px;"
+      class="height-80 bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     >
       <svg
         class="absolute bottom-0 overflow-hidden"
@@ -270,11 +265,20 @@
     <div class="container mx-auto px-4">
       <div class="items-center flex flex-wrap">
         <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img
-            alt="..."
-            class="max-w-full rounded-lg shadow-lg"
-            src="./assets/img/flujo_evento.png"
-          />
+          <div
+            class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+          >
+            <i class="fas fa-road text-xl"></i>
+          </div>
+          <h3 class="text-3xl font-semibold">Roadmap</h3>
+          <div class="flex flex-wrap mt-12 justify-center space-around">
+            <img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              src="./assets/img/flujo_evento.png"
+            />
+          </div>
+
         </div>
         <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
           <div class="md:pr-12">
@@ -332,51 +336,56 @@
 <!--                </div>-->
 <!--              </li>-->
 <!--            </ul>-->
-            <div class="flex flex-wrap mt-12 justify-center" style="justify-content: space-around">
+            <div class="flex flex-wrap mt-12 justify-center space-around">
               <div class="w-full lg:w-6/12 px-4 text-center">
 
-                <h3 class="text-xl mt-5 font-bold" style="text-align: left">
-                  22 Abril
-                </h3>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <div class="container-max">
+                  <h1 class="text-3xl mt-5 mr-6 font-bold txt-left">
+                    22
+                  </h1>
+                  <h3 class="text-xl mt-5 font-bold text-black txt-left">
+                    Abril
+                  </h3>
+                </div>
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                 1 h Sesiones Tutorial
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Sesiones Prácticas de ML
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Advisor Meeting
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Sesiones Demo
                 </p>
 
-                <h3 class="text-xl mt-5 font-bold" style="text-align: left">
+                <h3 class="text-xl mt-5 font-bold txt-left" >
                   29 Abril
                 </h3>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify" >
                   1 h Sesiones Tutorial
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Sesiones Prácticas de ML
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify" >
                   1 h Advisor Meeting
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Sesiones Demo
                 </p>
 
-                <h3 class="text-xl mt-5 font-bold" style="text-align: left">
+                <h3 class="text-xl mt-5 font-bold txt-left">
                   06 Mayo
                 </h3>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Advisor Meeting
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Experiences
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Sesiones Demo
                 </p>
 
@@ -385,45 +394,45 @@
 
               <div class="w-full lg:w-6/12 px-4 text-center">
 
-                <h3 class="text-xl mt-5 font-bold" style="text-align: left">
+                <h3 class="text-xl mt-5 font-bold txt-left" >
                   23 Abril
                 </h3>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Sesiones Tutorial
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Sesiones Prácticas de ML
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Advisor Meeting
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Sesiones Demo
                 </p>
 
-                <h3 class="text-xl mt-5 font-bold" style="text-align: left">
+                <h3 class="text-xl mt-5 font-bold txt-left">
                   30 Abril
                 </h3>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify" >
                   1 h Sesiones Tutorial
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Sesiones Prácticas de ML
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Advisor Meeting
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Sesiones Demo
                 </p>
 
-                <h3 class="text-xl mt-5 font-bold" style="text-align: left">
+                <h3 class="text-xl mt-5 font-bold txt-left">
                   07 Mayo
                 </h3>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   2 h Experiencias
                 </p>
-                <p class="mt-2 mb-4 text-gray-500" style="text-align: justify;">
+                <p class="mt-2 mb-4 text-gray-500 txt-justify">
                   1 h Cierre del evento
                 </p>
 
@@ -591,8 +600,7 @@
 
   <section class="pb-20 relative block bg-gray-900">
     <div
-      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-      style="height: 80px;"
+      class="height-80 bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     >
       <svg
         class="absolute bottom-0 overflow-hidden"
@@ -723,9 +731,8 @@
               <div class="text-center mt-6">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6BZncfvKfYy6eGJq_US_EUtGb7cSWWxPKNWFA5WPio6AjYg/viewform?usp=sf_link">
                   <button
-                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    class="button-trs bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                     type="button"
-                    style="transition: all 0.15s ease 0s;"
                   >
                     Ir al formulario
                   </button>
