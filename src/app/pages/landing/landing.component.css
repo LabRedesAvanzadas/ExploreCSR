@@ -1,67 +1,10 @@
-.img-test{
-  color: blueviolet;
-}
-
-.min-75{
-  min-height: 75vh;
-}
-
-.header-container{
-  display: flex;
-  flex-direction: column;
-}
 
 
 
 
 
 
-.h-70{
-  height: 70px;
-}
-
-.h-80{
-  height: 80px;
-}
-
-.txt-justify{
-  text-align: justify;
-}
-
-.txt-center{
-  text-align: center;
-}
-
-.txt-left{
-  text-align: left;
-}
-
-.svg1{
-  height: 95px;
-  top: -94px;
-}
-
-.height-80{
-  height: 80px;
-}
-
-.button-trs{
-  transition: all 0.15s ease 0s;
-}
 
 
-
-.space-around{
-  justify-content: space-around;
-}
-
-
-
-.container-max{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  color: #ea4335
-}
 
 
