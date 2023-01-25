@@ -6,6 +6,22 @@
   min-height: 75vh;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .bg-svg{
   background-image: url("../../../assets/img/bg-top.svg") ;
 }
@@ -66,18 +82,4 @@
   color: #ea4335
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
 
-@media only screen and (max-width: 600px) {
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
