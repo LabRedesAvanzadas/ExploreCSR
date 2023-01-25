@@ -11,21 +11,6 @@
   flex-direction: column;
 }
 
-.logo-cont{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-@media only screen and (max-width: 600px) {
-  .logo-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
 
 .bg-svg{
   background-image: url("src/assets/img/bg-top.svg") ;

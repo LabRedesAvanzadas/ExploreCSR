@@ -1,1 +1,17 @@
 @import url("../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+.logo-cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
