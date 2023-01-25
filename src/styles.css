@@ -30,12 +30,27 @@
   height: 55px
 }
 
-.container-max{
+.container-max-red{
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   color: #ea4335
 }
+
+.container-max-yll{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   color: #fbbc04
+ }
+
+.container-max-blue{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: #4285f4
+}
+
 
 .svg1{
   height: 95px;
@@ -80,5 +95,10 @@
 
 .h70{
   height: 70px;
+}
+
+.container-bottom{
+  align-items: center;
+  flex-direction: column;
 }
 
