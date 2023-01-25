@@ -15,3 +15,17 @@
     flex-direction: column;
   }
 }
+
+.img-fit{
+  object-fit: contain;
+  height: 75px
+}
+
+.bg-svg{
+  background-image: url("src/assets/img/bg-top.svg") ;
+}
+
+.img-fit-55{
+  object-fit: contain;
+  height: 55px
+}

@@ -12,14 +12,9 @@
 }
 
 
-.bg-svg{
-  background-image: url("src/assets/img/bg-top.svg") ;
-}
 
-.img-fit{
-  object-fit: contain;
-  height: 75px
-}
+
+
 
 .h-70{
   height: 70px;
@@ -60,10 +55,7 @@
   justify-content: space-around;
 }
 
-.img-fit-55{
-  object-fit: contain;
-  height: 55px
-}
+
 
 .container-max{
   display: flex;
