@@ -6,7 +6,12 @@
   min-height: 75vh;
 }
 
-.logo-container {
+.header-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container{
   display: flex;
   align-items: center;
   justify-content: center;
