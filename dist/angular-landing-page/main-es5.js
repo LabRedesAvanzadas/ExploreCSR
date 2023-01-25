@@ -1,0 +1,633 @@
+(function () {
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+
+  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+  function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+
+  function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+  (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
+    /***/
+    0:
+    /*!***************************!*\
+      !*** multi ./src/main.ts ***!
+      \***************************/
+
+    /*! no static exports found */
+
+    /***/
+    function _(module, exports, __webpack_require__) {
+      module.exports = __webpack_require__(
+      /*! I:\ExploreCSR\src\main.ts */
+      "zUnb");
+      /***/
+    },
+
+    /***/
+    "AytR":
+    /*!*****************************************!*\
+      !*** ./src/environments/environment.ts ***!
+      \*****************************************/
+
+    /*! exports provided: environment */
+
+    /***/
+    function AytR(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "environment", function () {
+        return environment;
+      }); // This file can be replaced during build by using the `fileReplacements` array.
+      // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+      // The list of file replacements can be found in `angular.json`.
+
+
+      var environment = {
+        production: false
+      };
+      /*
+       * For easier debugging in development mode, you can import the following file
+       * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+       *
+       * This import should be commented out in production mode because it will have a negative impact
+       * on performance if an error is thrown.
+       */
+      // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+      /***/
+    },
+
+    /***/
+    "JqLZ":
+    /*!********************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/landing/landing.component.html ***!
+      \********************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function JqLZ(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<app-navbar></app-navbar>\r\n<main>\r\n  <div\r\n    class=\"relative pt-16 pb-32 flex content-center items-center justify-center min-75\"\r\n  >\r\n    <div\r\n      class=\"absolute top-0 w-full h-full bg-center bg-cover bg-svg\"\r\n    >\r\n      <span\r\n        id=\"blackOverlay\"\r\n        class=\"w-full h-full absolute opacity-75 bg-black\"\r\n      ></span>\r\n    </div>\r\n    <div class=\"container relative mx-auto\">\r\n      <div class=\"items-center flex flex-wrap\">\r\n        <div class=\"w-full lg:w-6/10 px-4 ml-auto mr-auto text-center\">\r\n          <div class=\"header-container\">\r\n            <div class=\"logo-cont\">\r\n              <img class=\"img-fit\" src=\"assets/img/logo-espol-blanco.png\">\r\n              <h1 class=\"text-white font-semibold text-3xl ml-4 mr-4\">&</h1>\r\n              <img class=\"img-fit-55\"  src=\"assets/img/google_research_colorful.png\">\r\n            </div>\r\n\r\n\r\n            <h1 class=\"text-white font-semibold text-5xl\">\r\n              exploreCSR 2023, Guayaquil-EC.\r\n            </h1>\r\n            <h3 class=\"mt-4 text-lg text-gray-300\">\r\n              SmartX + exploreCSR: Explora tu carrera + Machine Learning\r\n            </h3>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div\r\n      class=\"h-70 top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden\"\r\n    >\r\n      <svg\r\n        class=\"absolute bottom-0 overflow-hidden\"\r\n        xmlns=\"http://www.w3.org/2000/svg\"\r\n        preserveAspectRatio=\"none\"\r\n        version=\"1.1\"\r\n        viewBox=\"0 0 2560 100\"\r\n        x=\"0\"\r\n        y=\"0\"\r\n      >\r\n        <polygon\r\n          class=\"text-gray-300 fill-current\"\r\n          points=\"2560 0 2560 100 0 100\"\r\n        ></polygon>\r\n      </svg>\r\n    </div>\r\n  </div>\r\n  <section class=\"pb-20 bg-gray-300 -mt-24\">\r\n    <div class=\"container mx-auto px-4\">\r\n      <div class=\"flex flex-wrap\">\r\n        <div class=\"lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg\"\r\n          >\r\n            <div class=\"px-4 py-5 flex-auto\">\r\n              <div\r\n                class=\"text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400\"\r\n              >\r\n                <i class=\"fas fa-chalkboard-teacher\"></i>\r\n              </div>\r\n              <h6 class=\"text-xl font-semibold\">Sesiones tutorial</h6>\r\n              <p class=\"mt-2 mb-4 text-gray-600\">\r\n                Sesiones de plenaria  con los fundamentos  aplicados a Machine Learning. 4 sesiones, 1 hora diaria\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"w-full md:w-4/12 px-4 text-center\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg\"\r\n          >\r\n            <div class=\"px-4 py-5 flex-auto\">\r\n              <div\r\n                class=\"text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400\"\r\n              >\r\n                <i class=\"fas fa-microchip\"></i>\r\n              </div>\r\n              <h6 class=\"text-xl font-semibold\">Sesiones prácticas ML</h6>\r\n              <p class=\"mt-2 mb-4 text-gray-600\">\r\n                Sesiones de laboratorio con actividades de programación guiadas a tu propio ritmo.\r\n                4 sessions, 1 hour daily.\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"pt-6 w-full md:w-4/12 px-4 text-center\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg\"\r\n          >\r\n            <div class=\"px-4 py-5 flex-auto\">\r\n              <div\r\n                class=\"text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400\"\r\n              >\r\n                <i class=\"fas fa-wrench\"></i>\r\n              </div>\r\n              <h6 class=\"text-xl font-semibold\">Taller de artículos y RT</h6>\r\n              <p class=\"mt-2 mb-4 text-gray-600\">\r\n                Sesiones prácticas que introduce a los estudiantes a las herramientas comunes para organizar la revisión de literatura. 5 horas, 1 hora diaria.\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"w-full md:w-4/12 px-4 text-center\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg\"\r\n          >\r\n            <div class=\"px-4 py-5 flex-auto\">\r\n              <div\r\n                class=\"text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400\"\r\n              >\r\n                <i class=\"fas fa-screwdriver\"></i>\r\n              </div>\r\n              <h6 class=\"text-xl font-semibold\">Sesión práctica demo</h6>\r\n              <p class=\"mt-2 mb-4 text-gray-600\">\r\n                Sesiones de demostración en ML aplicado para NLP, visión computacional y ambientes inteligentes. 3 sesiones durante 3 días,  2 horas cada día.\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"w-full md:w-4/12 px-4 text-center\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg\"\r\n          >\r\n            <div class=\"px-4 py-5 flex-auto\">\r\n              <div\r\n                class=\"text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400\"\r\n              >\r\n                <i class=\"fas fa-retweet\"></i>\r\n              </div>\r\n              <h6 class=\"text-xl font-semibold\">Grad school application and experiences</h6>\r\n              <p class=\"mt-2 mb-4 text-gray-600\">\r\n                We will hold two different sessions to provide detailed information, in a tutorial format. 2 sessions during two days, 2 hour each.\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"w-full md:w-4/12 px-4 text-center\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg\"\r\n          >\r\n            <div class=\"px-4 py-5 flex-auto\">\r\n              <div\r\n                class=\"text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400\"\r\n              >\r\n                <i class=\"fas fa-lightbulb\"></i>\r\n              </div>\r\n              <h6 class=\"text-xl font-semibold\">Reuniones diarias con mentores</h6>\r\n              <p class=\"mt-2 mb-4 text-gray-600\">\r\n                Basado en aplicaciones de estudiantes y de la reacio preliminar\r\n                En función a las solicitudes de los estudiantes y el interés preliminar declarado, se harán grupos y se les asignará a un asesor de la facultad.              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"flex flex-wrap items-center mt-16\">\r\n        <div class=\"w-full md:w-5/12 px-4 mr-auto ml-auto\">\r\n          <div\r\n            class=\"text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100\"\r\n          >\r\n            <i class=\"fas fa-lightbulb text-xl\"></i>\r\n          </div>\r\n          <h3 class=\"text-3xl mb-2 font-semibold leading-normal\">\r\n            Nuestro objetivo\r\n          </h3>\r\n          <p\r\n            class=\"text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700\"\r\n          >\r\n            Nuestro objetivo es promover oportunidades de investigación que involucren a estudiantes de carreras de informática y no informática en la intersección de aprendizaje automático y ciencias aplicadas e ingeniería.\r\n          </p>\r\n          <a\r\n            href=\"\"\r\n            class=\"font-bold text-gray-800 mt-8\"\r\n            >Inscríbete!</a\r\n          >\r\n          <div class=\"flex flex-wrap mt-12 justify-center space-around\" >\r\n            <div class=\"w-full lg:w-6/12 px-4 text-center\">\r\n              <div\r\n                class=\"text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center\"\r\n              >\r\n                <i class=\"fas fa-user-friends text-xl\"></i>\r\n              </div>\r\n              <h3 class=\"text-xl mt-5 font-bold\">\r\n                Quiénes\r\n              </h3>\r\n              <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                Estudiantes de cualquier facultad con interés en la investigación en ML/AI\r\n              </p>\r\n            </div>\r\n            <div class=\"w-full lg:w-6/12 px-4 text-center\">\r\n              <div\r\n                class=\"text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center\"\r\n              >\r\n                <i class=\"fas fa-hashtag text-xl\"></i>\r\n              </div>\r\n              <h3 class=\"text-xl mt-5 font-bold\">\r\n                Cuantos\r\n              </h3>\r\n              <p class=\"mt-2 mb-4 text-gray-500 txt-center\">\r\n                100 Estudiantes\r\n              </p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"w-full md:w-4/12 px-4 mr-auto ml-auto\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600\"\r\n          >\r\n            <img\r\n              alt=\"...\"\r\n              src=\"./assets/img/fiec_edificio.jpg\"\r\n              class=\"w-full align-middle rounded-t-lg\"\r\n            />\r\n            <blockquote class=\"relative p-8 mb-4\">\r\n              <svg\r\n                preserveAspectRatio=\"none\"\r\n                xmlns=\"http://www.w3.org/2000/svg\"\r\n                viewBox=\"0 0 583 95\"\r\n                class=\"absolute left-0 w-full block svg1\"\r\n              >\r\n                <polygon\r\n                  points=\"-30,95 583,95 583,65\"\r\n                  class=\"text-pink-600 fill-current\"\r\n                ></polygon>\r\n              </svg>\r\n              <h4 class=\"text-xl font-bold text-white\">\r\n                Ubicación\r\n              </h4>\r\n              <p class=\"text-md font-light mt-2 text-white\">\r\n                Escuela Superior Politecnica del Litoral, Via perimetral Km 30. Facultad de Ingeniería en Electricidad y Computación\r\n              </p>\r\n            </blockquote>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <section class=\"relative py-20\">\r\n    <div\r\n      class=\"height-80 bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20\"\r\n    >\r\n      <svg\r\n        class=\"absolute bottom-0 overflow-hidden\"\r\n        xmlns=\"http://www.w3.org/2000/svg\"\r\n        preserveAspectRatio=\"none\"\r\n        version=\"1.1\"\r\n        viewBox=\"0 0 2560 100\"\r\n        x=\"0\"\r\n        y=\"0\"\r\n      >\r\n        <polygon\r\n          class=\"text-white fill-current\"\r\n          points=\"2560 0 2560 100 0 100\"\r\n        ></polygon>\r\n      </svg>\r\n    </div>\r\n    <div class=\"container mx-auto px-4\">\r\n      <div class=\"items-center flex flex-wrap\">\r\n        <div class=\"w-full md:w-4/12 ml-auto mr-auto px-4\">\r\n          <div\r\n            class=\"text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300\"\r\n          >\r\n            <i class=\"fas fa-road text-xl\"></i>\r\n          </div>\r\n          <h3 class=\"text-3xl font-semibold\">Roadmap</h3>\r\n          <div class=\"flex flex-wrap mt-12 justify-center space-around\">\r\n            <img\r\n              alt=\"...\"\r\n              class=\"max-w-full rounded-lg shadow-lg\"\r\n              src=\"./assets/img/flujo_evento.png\"\r\n            />\r\n          </div>\r\n\r\n        </div>\r\n        <div class=\"w-full md:w-6/12 ml-auto mr-auto px-4\">\r\n          <div class=\"md:pr-12\">\r\n            <div\r\n              class=\"text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300\"\r\n            >\r\n              <i class=\"fas fa-calendar text-xl\"></i>\r\n            </div>\r\n            <h3 class=\"text-3xl font-semibold\">Cronograma</h3>\r\n<!--            <p class=\"mt-4 text-lg leading-relaxed text-gray-600\">-->\r\n<!--              The extension comes with three pre-built pages to help you get-->\r\n<!--              started faster. You can change the text and images and you're-->\r\n<!--              good to go.-->\r\n<!--            </p>-->\r\n<!--            <ul class=\"list-none mt-6\">-->\r\n<!--              <li class=\"py-2\">-->\r\n<!--                <div class=\"flex items-center\">-->\r\n<!--                  <div>-->\r\n<!--                    <span-->\r\n<!--                      class=\"text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3\"-->\r\n<!--                      ><i class=\"fas fa-fingerprint\"></i-->\r\n<!--                    ></span>-->\r\n<!--                  </div>-->\r\n<!--                  <div>-->\r\n<!--                    <h4 class=\"text-gray-600\">-->\r\n<!--                      Carefully crafted components-->\r\n<!--                    </h4>-->\r\n<!--                  </div>-->\r\n<!--                </div>-->\r\n<!--              </li>-->\r\n<!--              <li class=\"py-2\">-->\r\n<!--                <div class=\"flex items-center\">-->\r\n<!--                  <div>-->\r\n<!--                    <span-->\r\n<!--                      class=\"text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3\"-->\r\n<!--                      ><i class=\"fab fa-html5\"></i-->\r\n<!--                    ></span>-->\r\n<!--                  </div>-->\r\n<!--                  <div>-->\r\n<!--                    <h4 class=\"text-gray-600\">Amazing page examples</h4>-->\r\n<!--                  </div>-->\r\n<!--                </div>-->\r\n<!--              </li>-->\r\n<!--              <li class=\"py-2\">-->\r\n<!--                <div class=\"flex items-center\">-->\r\n<!--                  <div>-->\r\n<!--                    <span-->\r\n<!--                      class=\"text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3\"-->\r\n<!--                      ><i class=\"far fa-paper-plane\"></i-->\r\n<!--                    ></span>-->\r\n<!--                  </div>-->\r\n<!--                  <div>-->\r\n<!--                    <h4 class=\"text-gray-600\">Dynamic components</h4>-->\r\n<!--                  </div>-->\r\n<!--                </div>-->\r\n<!--              </li>-->\r\n<!--            </ul>-->\r\n            <div class=\"flex flex-wrap mt-12 justify-center space-around\">\r\n              <div class=\"w-full lg:w-6/12 px-4 text-center\">\r\n\r\n                <div class=\"container-max\">\r\n                  <h1 class=\"text-3xl mt-5 mr-6 font-bold txt-left\">\r\n                    22\r\n                  </h1>\r\n                  <h3 class=\"text-xl mt-5 font-bold text-black txt-left\">\r\n                    Abril\r\n                  </h3>\r\n                </div>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                1 h Sesiones Tutorial\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Sesiones Prácticas de ML\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Advisor Meeting\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Sesiones Demo\r\n                </p>\r\n\r\n                <h3 class=\"text-xl mt-5 font-bold txt-left\" >\r\n                  29 Abril\r\n                </h3>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\" >\r\n                  1 h Sesiones Tutorial\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Sesiones Prácticas de ML\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\" >\r\n                  1 h Advisor Meeting\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Sesiones Demo\r\n                </p>\r\n\r\n                <h3 class=\"text-xl mt-5 font-bold txt-left\">\r\n                  06 Mayo\r\n                </h3>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Advisor Meeting\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Experiences\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Sesiones Demo\r\n                </p>\r\n\r\n\r\n              </div>\r\n\r\n              <div class=\"w-full lg:w-6/12 px-4 text-center\">\r\n\r\n                <h3 class=\"text-xl mt-5 font-bold txt-left\" >\r\n                  23 Abril\r\n                </h3>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Sesiones Tutorial\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Sesiones Prácticas de ML\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Advisor Meeting\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Sesiones Demo\r\n                </p>\r\n\r\n                <h3 class=\"text-xl mt-5 font-bold txt-left\">\r\n                  30 Abril\r\n                </h3>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\" >\r\n                  1 h Sesiones Tutorial\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Sesiones Prácticas de ML\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Advisor Meeting\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Sesiones Demo\r\n                </p>\r\n\r\n                <h3 class=\"text-xl mt-5 font-bold txt-left\">\r\n                  07 Mayo\r\n                </h3>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  2 h Experiencias\r\n                </p>\r\n                <p class=\"mt-2 mb-4 text-gray-500 txt-justify\">\r\n                  1 h Cierre del evento\r\n                </p>\r\n\r\n              </div>\r\n\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n<!--  <section class=\"pt-20 pb-48\">-->\r\n<!--    <div class=\"container mx-auto px-4\">-->\r\n<!--      <div class=\"flex flex-wrap justify-center text-center mb-24\">-->\r\n<!--        <div class=\"w-full lg:w-6/12 px-4\">-->\r\n<!--          <h2 class=\"text-4xl font-semibold\">Here are our heroes</h2>-->\r\n<!--          <p class=\"text-lg leading-relaxed m-4 text-gray-600\">-->\r\n<!--            According to the National Oceanic and Atmospheric-->\r\n<!--            Administration, Ted, Scambos, NSIDClead scentist, puts the-->\r\n<!--            potentially record maximum.-->\r\n<!--          </p>-->\r\n<!--        </div>-->\r\n<!--      </div>-->\r\n<!--      <div class=\"flex flex-wrap\">-->\r\n<!--        <div class=\"w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4\">-->\r\n<!--          <div class=\"px-6\">-->\r\n<!--            <img-->\r\n<!--              alt=\"...\"-->\r\n<!--              src=\"./assets/img/team-1-800x800.jpg\"-->\r\n<!--              class=\"shadow-lg rounded-full max-w-full mx-auto\"-->\r\n<!--              style=\"max-width: 120px;\"-->\r\n<!--            />-->\r\n<!--            <div class=\"pt-6 text-center\">-->\r\n<!--              <h5 class=\"text-xl font-bold\">Ryan Tompson</h5>-->\r\n<!--              <p class=\"mt-1 text-sm text-gray-500 uppercase font-semibold\">-->\r\n<!--                Web Developer-->\r\n<!--              </p>-->\r\n<!--              <div class=\"mt-6\">-->\r\n<!--                <button-->\r\n<!--                  class=\"bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-twitter\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-facebook-f\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-dribbble\"></i>-->\r\n<!--                </button>-->\r\n<!--              </div>-->\r\n<!--            </div>-->\r\n<!--          </div>-->\r\n<!--        </div>-->\r\n<!--        <div class=\"w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4\">-->\r\n<!--          <div class=\"px-6\">-->\r\n<!--            <img-->\r\n<!--              alt=\"...\"-->\r\n<!--              src=\"./assets/img/team-2-800x800.jpg\"-->\r\n<!--              class=\"shadow-lg rounded-full max-w-full mx-auto\"-->\r\n<!--              style=\"max-width: 120px;\"-->\r\n<!--            />-->\r\n<!--            <div class=\"pt-6 text-center\">-->\r\n<!--              <h5 class=\"text-xl font-bold\">Romina Hadid</h5>-->\r\n<!--              <p class=\"mt-1 text-sm text-gray-500 uppercase font-semibold\">-->\r\n<!--                Marketing Specialist-->\r\n<!--              </p>-->\r\n<!--              <div class=\"mt-6\">-->\r\n<!--                <button-->\r\n<!--                  class=\"bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-google\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-facebook-f\"></i>-->\r\n<!--                </button>-->\r\n<!--              </div>-->\r\n<!--            </div>-->\r\n<!--          </div>-->\r\n<!--        </div>-->\r\n<!--        <div class=\"w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4\">-->\r\n<!--          <div class=\"px-6\">-->\r\n<!--            <img-->\r\n<!--              alt=\"...\"-->\r\n<!--              src=\"./assets/img/team-3-800x800.jpg\"-->\r\n<!--              class=\"shadow-lg rounded-full max-w-full mx-auto\"-->\r\n<!--              style=\"max-width: 120px;\"-->\r\n<!--            />-->\r\n<!--            <div class=\"pt-6 text-center\">-->\r\n<!--              <h5 class=\"text-xl font-bold\">Alexa Smith</h5>-->\r\n<!--              <p class=\"mt-1 text-sm text-gray-500 uppercase font-semibold\">-->\r\n<!--                UI/UX Designer-->\r\n<!--              </p>-->\r\n<!--              <div class=\"mt-6\">-->\r\n<!--                <button-->\r\n<!--                  class=\"bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-google\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-twitter\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-instagram\"></i>-->\r\n<!--                </button>-->\r\n<!--              </div>-->\r\n<!--            </div>-->\r\n<!--          </div>-->\r\n<!--        </div>-->\r\n<!--        <div class=\"w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4\">-->\r\n<!--          <div class=\"px-6\">-->\r\n<!--            <img-->\r\n<!--              alt=\"...\"-->\r\n<!--              src=\"./assets/img/team-4-470x470.png\"-->\r\n<!--              class=\"shadow-lg rounded-full max-w-full mx-auto\"-->\r\n<!--              style=\"max-width: 120px;\"-->\r\n<!--            />-->\r\n<!--            <div class=\"pt-6 text-center\">-->\r\n<!--              <h5 class=\"text-xl font-bold\">Jenna Kardi</h5>-->\r\n<!--              <p class=\"mt-1 text-sm text-gray-500 uppercase font-semibold\">-->\r\n<!--                Founder and CEO-->\r\n<!--              </p>-->\r\n<!--              <div class=\"mt-6\">-->\r\n<!--                <button-->\r\n<!--                  class=\"bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-dribbble\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-google\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-twitter\"></i></button-->\r\n<!--                ><button-->\r\n<!--                  class=\"bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1\"-->\r\n<!--                  type=\"button\"-->\r\n<!--                >-->\r\n<!--                  <i class=\"fab fa-instagram\"></i>-->\r\n<!--                </button>-->\r\n<!--              </div>-->\r\n<!--            </div>-->\r\n<!--          </div>-->\r\n<!--        </div>-->\r\n<!--      </div>-->\r\n<!--    </div>-->\r\n<!--  </section>-->\r\n\r\n  <section class=\"pb-20 relative block bg-gray-900\">\r\n    <div\r\n      class=\"height-80 bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20\"\r\n    >\r\n      <svg\r\n        class=\"absolute bottom-0 overflow-hidden\"\r\n        xmlns=\"http://www.w3.org/2000/svg\"\r\n        preserveAspectRatio=\"none\"\r\n        version=\"1.1\"\r\n        viewBox=\"0 0 2560 100\"\r\n        x=\"0\"\r\n        y=\"0\"\r\n      >\r\n        <polygon\r\n          class=\"text-gray-900 fill-current\"\r\n          points=\"2560 0 2560 100 0 100\"\r\n        ></polygon>\r\n      </svg>\r\n    </div>\r\n    <div class=\"container mx-auto px-4 lg:pt-24 lg:pb-64\">\r\n      <div class=\"flex flex-wrap text-center justify-center\">\r\n        <div class=\"w-full lg:w-6/12 px-4\">\r\n          <h2 class=\"text-4xl font-semibold text-white\">Criterios de selección</h2>\r\n<!--          <p class=\"text-lg leading-relaxed mt-4 mb-4 text-gray-500\">-->\r\n<!--            Put the potentially record low maximum sea ice extent tihs year-->\r\n<!--            down to low ice. According to the National Oceanic and-->\r\n<!--            Atmospheric Administration, Ted, Scambos.-->\r\n<!--          </p>-->\r\n        </div>\r\n      </div>\r\n      <div class=\"flex flex-wrap mt-12 justify-center\">\r\n        <div class=\"w-full lg:w-3/12 px-4 text-center\">\r\n          <div\r\n            class=\"text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center\"\r\n          >\r\n            <i class=\"fas fa-medal text-xl\"></i>\r\n          </div>\r\n<!--          <h6 class=\"text-xl mt-5 font-semibold text-white\">-->\r\n<!--            Excelent Services-->\r\n<!--          </h6>-->\r\n          <p class=\"mt-2 mb-4 text-gray-500\">\r\n            Haber aprobado Fundamentos de Programación\r\n          </p>\r\n        </div>\r\n        <div class=\"w-full lg:w-3/12 px-4 text-center\">\r\n          <div\r\n            class=\"text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center\"\r\n          >\r\n            <i class=\"fas fa-poll text-xl\"></i>\r\n          </div>\r\n<!--          <h5 class=\"text-xl mt-5 font-semibold text-white\">-->\r\n<!--            Grow your market-->\r\n<!--          </h5>-->\r\n          <p class=\"mt-2 mb-4 text-gray-500\">\r\n            Haber aprobado 30 materias (requerimiento para itinerarios de investigación)\r\n          </p>\r\n        </div>\r\n        <div class=\"w-full lg:w-3/12 px-4 text-center\">\r\n          <div\r\n            class=\"text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center\"\r\n          >\r\n            <i class=\"fas fa-lightbulb text-xl\"></i>\r\n          </div>\r\n<!--          <h5 class=\"text-xl mt-5 font-semibold text-white\">Launch time</h5>-->\r\n          <p class=\"mt-2 mb-4 text-gray-500\">\r\n            Notas altas en programación y estadística\r\n          </p>\r\n        </div>\r\n        <div class=\"w-full lg:w-3/12 px-4 text-center\">\r\n          <div\r\n            class=\"text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center\"\r\n          >\r\n            <i class=\"fas fa-lightbulb text-xl\"></i>\r\n          </div>\r\n<!--          <h5 class=\"text-xl mt-5 font-semibold text-white\">Launch time</h5>-->\r\n          <p class=\"mt-2 mb-4 text-gray-500\">\r\n            Declaraciones reflexivas acerca de por qué quieren explorar la investigación y qué esperan obtener al participar en nuestro programa.\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n  <section class=\"relative block py-24 lg:pt-0 bg-gray-900\">\r\n    <div class=\"container mx-auto px-4 mt-6\">\r\n      <div class=\"flex flex-wrap justify-center lg:-mt-64 -mt-48\">\r\n        <div class=\"w-full lg:w-6/12 px-4\">\r\n          <div\r\n            class=\"relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300\"\r\n          >\r\n            <div class=\"flex-auto p-5 lg:p-10\">\r\n              <h4 class=\"text-2xl font-semibold\">Te unes al reto?</h4>\r\n              <p class=\"leading-relaxed mt-1 mb-4 text-gray-600\">\r\n                Completa el formulario en el siguiente link\r\n              </p>\r\n<!--              <div class=\"relative w-full mb-3 mt-8\">-->\r\n<!--                <label-->\r\n<!--                  class=\"block uppercase text-gray-700 text-xs font-bold mb-2\"-->\r\n<!--                  for=\"full-name\"-->\r\n<!--                  >Full Name</label-->\r\n<!--                ><input-->\r\n<!--                  type=\"text\"-->\r\n<!--                  class=\"border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full\"-->\r\n<!--                  placeholder=\"Full Name\"-->\r\n<!--                  style=\"transition: all 0.15s ease 0s;\"-->\r\n<!--                />-->\r\n<!--              </div>-->\r\n<!--              <div class=\"relative w-full mb-3\">-->\r\n<!--                <label-->\r\n<!--                  class=\"block uppercase text-gray-700 text-xs font-bold mb-2\"-->\r\n<!--                  for=\"email\"-->\r\n<!--                  >Email</label-->\r\n<!--                ><input-->\r\n<!--                  type=\"email\"-->\r\n<!--                  class=\"border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full\"-->\r\n<!--                  placeholder=\"Email\"-->\r\n<!--                  style=\"transition: all 0.15s ease 0s;\"-->\r\n<!--                />-->\r\n<!--              </div>-->\r\n<!--              <div class=\"relative w-full mb-3\">-->\r\n<!--                <label-->\r\n<!--                  class=\"block uppercase text-gray-700 text-xs font-bold mb-2\"-->\r\n<!--                  for=\"message\"-->\r\n<!--                  >Message</label-->\r\n<!--                ><textarea-->\r\n<!--                  rows=\"4\"-->\r\n<!--                  cols=\"80\"-->\r\n<!--                  class=\"border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full\"-->\r\n<!--                  placeholder=\"Type a message...\"-->\r\n<!--                ></textarea>-->\r\n<!--              </div>-->\r\n              <div class=\"text-center mt-6\">\r\n                <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSf6BZncfvKfYy6eGJq_US_EUtGb7cSWWxPKNWFA5WPio6AjYg/viewform?usp=sf_link\">\r\n                  <button\r\n                    class=\"button-trs bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1\"\r\n                    type=\"button\"\r\n                  >\r\n                    Ir al formulario\r\n                  </button>\r\n                </a>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n</main>\r\n<!--<app-footer></app-footer>-->\r\n";
+      /***/
+    },
+
+    /***/
+    "LmEr":
+    /*!*******************************************************!*\
+      !*** ./src/app/components/footer/footer.component.ts ***!
+      \*******************************************************/
+
+    /*! exports provided: FooterComponent */
+
+    /***/
+    function LmEr(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "FooterComponent", function () {
+        return FooterComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _raw_loader_footer_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! raw-loader!./footer.component.html */
+      "WwN9");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+
+      var FooterComponent = /*#__PURE__*/function () {
+        function FooterComponent() {
+          _classCallCheck(this, FooterComponent);
+
+          this.date = new Date().getFullYear();
+        }
+
+        _createClass(FooterComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }]);
+
+        return FooterComponent;
+      }();
+
+      FooterComponent.ctorParameters = function () {
+        return [];
+      };
+
+      FooterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-footer',
+        template: _raw_loader_footer_component_html__WEBPACK_IMPORTED_MODULE_1__["default"]
+      })], FooterComponent);
+      /***/
+    },
+
+    /***/
+    "S6iF":
+    /*!***********************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/navbar/navbar.component.html ***!
+      \***********************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function S6iF(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<nav\r\n  class=\"top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 \"\r\n>\r\n  <div\r\n    class=\"container px-4 mx-auto flex flex-wrap items-center justify-between\"\r\n  >\r\n    <div\r\n      class=\"w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start\"\r\n    >\r\n      <a\r\n        class=\"text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white\"\r\n        href=\"https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation\"\r\n        >SmartX journal club</a\r\n      ><button\r\n        class=\"cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none\"\r\n        type=\"button\"\r\n        (click)=\"toggleNavbar()\"\r\n      >\r\n        <i class=\"text-white fas fa-bars\"></i>\r\n      </button>\r\n    </div>\r\n    <div\r\n      class=\"lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none\"\r\n      [ngClass]=\"{'hidden': !showMenu, 'block': showMenu}\"\r\n    >\r\n      <ul class=\"flex flex-col lg:flex-row list-none mr-auto\">\r\n      </ul>\r\n      <ul class=\"flex flex-col lg:flex-row list-none lg:ml-auto\">\r\n        <li class=\"flex items-center\">\r\n          <a\r\n            class=\"lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold\"\r\n            href=\"\"\r\n            ><i\r\n              class=\"lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg \"\r\n            ></i\r\n            ><span class=\"lg:hidden inline-block ml-2\">Share</span></a\r\n          >\r\n        </li>\r\n        <li class=\"flex items-center\">\r\n          <a\r\n            class=\"lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold\"\r\n            href=\"\"\r\n            ><i\r\n              class=\"lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg \"\r\n            ></i\r\n            ><span class=\"lg:hidden inline-block ml-2\">Tweet</span></a\r\n          >\r\n        </li>\r\n        <li class=\"flex items-center\">\r\n          <a\r\n            class=\"lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold\"\r\n            href=\"\"\r\n            ><i\r\n              class=\"lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg \"\r\n            ></i\r\n            ><span class=\"lg:hidden inline-block ml-2\">Star</span></a\r\n          >\r\n        </li>\r\n<!--        <li class=\"flex items-center\">-->\r\n<!--          <button-->\r\n<!--            class=\"bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3\"-->\r\n<!--            type=\"button\"-->\r\n<!--            style=\"transition: all 0.15s ease 0s;\"-->\r\n<!--          >-->\r\n<!--            <i class=\"fas fa-arrow-alt-circle-down\"></i> Download-->\r\n<!--          </button>-->\r\n<!--        </li>-->\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n";
+      /***/
+    },
+
+    /***/
+    "Sy1n":
+    /*!**********************************!*\
+      !*** ./src/app/app.component.ts ***!
+      \**********************************/
+
+    /*! exports provided: AppComponent */
+
+    /***/
+    function Sy1n(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "AppComponent", function () {
+        return AppComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _raw_loader_app_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! raw-loader!./app.component.html */
+      "VzVu");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+
+      var AppComponent = /*#__PURE__*/_createClass(function AppComponent() {
+        _classCallCheck(this, AppComponent);
+
+        this.title = 'angular-landing-page';
+      });
+
+      AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-root',
+        template: _raw_loader_app_component_html__WEBPACK_IMPORTED_MODULE_1__["default"]
+      })], AppComponent);
+      /***/
+    },
+
+    /***/
+    "VzVu":
+    /*!**************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
+      \**************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function VzVu(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<router-outlet></router-outlet>\r\n";
+      /***/
+    },
+
+    /***/
+    "WwN9":
+    /*!***********************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/footer/footer.component.html ***!
+      \***********************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function WwN9(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<footer class=\"relative bg-gray-300 pt-8 pb-6\">\r\n  <div\r\n    class=\"bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20\"\r\n    style=\"height: 80px;\"\r\n  >\r\n    <svg\r\n      class=\"absolute bottom-0 overflow-hidden\"\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      preserveAspectRatio=\"none\"\r\n      version=\"1.1\"\r\n      viewBox=\"0 0 2560 100\"\r\n      x=\"0\"\r\n      y=\"0\"\r\n    >\r\n      <polygon\r\n        class=\"text-gray-300 fill-current\"\r\n        points=\"2560 0 2560 100 0 100\"\r\n      ></polygon>\r\n    </svg>\r\n  </div>\r\n  <div class=\"container mx-auto px-4\">\r\n    <div class=\"flex flex-wrap\">\r\n      <div class=\"w-full lg:w-6/12 px-4\">\r\n        <h4 class=\"text-3xl font-semibold\">Let's keep in touch!</h4>\r\n        <h5 class=\"text-lg mt-0 mb-2 text-gray-700\">\r\n          Find us on any of these platforms, we respond 1-2 business days.\r\n        </h5>\r\n        <div class=\"mt-6\">\r\n          <button\r\n            class=\"bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3\"\r\n            type=\"button\"\r\n          >\r\n            <i class=\"flex fab fa-twitter\"></i></button\r\n          ><button\r\n            class=\"bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3\"\r\n            type=\"button\"\r\n          >\r\n            <i class=\"flex fab fa-facebook-square\"></i></button\r\n          ><button\r\n            class=\"bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3\"\r\n            type=\"button\"\r\n          >\r\n            <i class=\"flex fab fa-dribbble\"></i></button\r\n          ><button\r\n            class=\"bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3\"\r\n            type=\"button\"\r\n          >\r\n            <i class=\"flex fab fa-github\"></i>\r\n          </button>\r\n        </div>\r\n      </div>\r\n      <div class=\"w-full lg:w-6/12 px-4\">\r\n        <div class=\"flex flex-wrap items-top mb-6\">\r\n          <div class=\"w-full lg:w-4/12 px-4 ml-auto\">\r\n            <span\r\n              class=\"block uppercase text-gray-600 text-sm font-semibold mb-2\"\r\n              >Useful Links</span\r\n            >\r\n            <ul class=\"list-unstyled\">\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://www.creative-tim.com/presentation\"\r\n                  >About Us</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://blog.creative-tim.com\"\r\n                  >Blog</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://www.github.com/creativetimofficial\"\r\n                  >Github</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://www.creative-tim.com/bootstrap-themes/free\"\r\n                  >Free Products</a\r\n                >\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"w-full lg:w-4/12 px-4\">\r\n            <span\r\n              class=\"block uppercase text-gray-600 text-sm font-semibold mb-2\"\r\n              >Other Resources</span\r\n            >\r\n            <ul class=\"list-unstyled\">\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md\"\r\n                  >MIT License</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://creative-tim.com/terms\"\r\n                  >Terms &amp; Conditions</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://creative-tim.com/privacy\"\r\n                  >Privacy Policy</a\r\n                >\r\n              </li>\r\n              <li>\r\n                <a\r\n                  class=\"text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm\"\r\n                  href=\"https://creative-tim.com/contact-us\"\r\n                  >Contact Us</a\r\n                >\r\n              </li>\r\n            </ul>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <hr class=\"my-6 border-gray-400\" />\r\n    <div\r\n      class=\"flex flex-wrap items-center md:justify-between justify-center\"\r\n    >\r\n      <div class=\"w-full md:w-4/12 px-4 mx-auto text-center\">\r\n        <div class=\"text-sm text-gray-600 font-semibold py-1\">\r\n          Copyright © {{date}} CcDev\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</footer>\r\n";
+      /***/
+    },
+
+    /***/
+    "YQZ2":
+    /*!*****************************************************!*\
+      !*** ./src/app/pages/landing/landing.component.css ***!
+      \*****************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function YQZ2(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = ".img-test{\r\n  color: blueviolet;\r\n}\r\n\r\n.min-75{\r\n  min-height: 75vh;\r\n}\r\n\r\n.header-container{\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.logo-cont{\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  flex-direction: row;\r\n}\r\n\r\n@media only screen and (max-width: 600px) {\r\n  .logo-cont {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n  }\r\n}\r\n\r\n.bg-svg{\r\n  background-image: url('bg-top.svg');\r\n}\r\n\r\n.img-fit{\r\n  -o-object-fit: contain;\r\n     object-fit: contain;\r\n  height: 75px\r\n}\r\n\r\n.h-70{\r\n  height: 70px;\r\n}\r\n\r\n.h-80{\r\n  height: 80px;\r\n}\r\n\r\n.txt-justify{\r\n  text-align: justify;\r\n}\r\n\r\n.txt-center{\r\n  text-align: center;\r\n}\r\n\r\n.txt-left{\r\n  text-align: left;\r\n}\r\n\r\n.svg1{\r\n  height: 95px;\r\n  top: -94px;\r\n}\r\n\r\n.height-80{\r\n  height: 80px;\r\n}\r\n\r\n.button-trs{\r\n  transition: all 0.15s ease 0s;\r\n}\r\n\r\n.space-around{\r\n  justify-content: space-around;\r\n}\r\n\r\n.img-fit-55{\r\n  -o-object-fit: contain;\r\n     object-fit: contain;\r\n  height: 55px\r\n}\r\n\r\n.container-max{\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: flex-end;\r\n  color: #ea4335\r\n}\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxhbmRpbmcuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRTtJQUNFLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLHNCQUFzQjtFQUN4QjtBQUNGOztBQUVBO0VBQ0UsbUNBQW1EO0FBQ3JEOztBQUVBO0VBQ0Usc0JBQW1CO0tBQW5CLG1CQUFtQjtFQUNuQjtBQUNGOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFVBQVU7QUFDWjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLDZCQUE2QjtBQUMvQjs7QUFJQTtFQUNFLDZCQUE2QjtBQUMvQjs7QUFFQTtFQUNFLHNCQUFtQjtLQUFuQixtQkFBbUI7RUFDbkI7QUFDRjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIscUJBQXFCO0VBQ3JCO0FBQ0YiLCJmaWxlIjoibGFuZGluZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmltZy10ZXN0e1xyXG4gIGNvbG9yOiBibHVldmlvbGV0O1xyXG59XHJcblxyXG4ubWluLTc1e1xyXG4gIG1pbi1oZWlnaHQ6IDc1dmg7XHJcbn1cclxuXHJcbi5oZWFkZXItY29udGFpbmVye1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG5cclxuLmxvZ28tY29udHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxufVxyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gIC5sb2dvLWNvbnQge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgfVxyXG59XHJcblxyXG4uYmctc3Zne1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcInNyYy9hc3NldHMvaW1nL2JnLXRvcC5zdmdcIikgO1xyXG59XHJcblxyXG4uaW1nLWZpdHtcclxuICBvYmplY3QtZml0OiBjb250YWluO1xyXG4gIGhlaWdodDogNzVweFxyXG59XHJcblxyXG4uaC03MHtcclxuICBoZWlnaHQ6IDcwcHg7XHJcbn1cclxuXHJcbi5oLTgwe1xyXG4gIGhlaWdodDogODBweDtcclxufVxyXG5cclxuLnR4dC1qdXN0aWZ5e1xyXG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XHJcbn1cclxuXHJcbi50eHQtY2VudGVye1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuLnR4dC1sZWZ0e1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcbi5zdmcxe1xyXG4gIGhlaWdodDogOTVweDtcclxuICB0b3A6IC05NHB4O1xyXG59XHJcblxyXG4uaGVpZ2h0LTgwe1xyXG4gIGhlaWdodDogODBweDtcclxufVxyXG5cclxuLmJ1dHRvbi10cnN7XHJcbiAgdHJhbnNpdGlvbjogYWxsIDAuMTVzIGVhc2UgMHM7XHJcbn1cclxuXHJcblxyXG5cclxuLnNwYWNlLWFyb3VuZHtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxufVxyXG5cclxuLmltZy1maXQtNTV7XHJcbiAgb2JqZWN0LWZpdDogY29udGFpbjtcclxuICBoZWlnaHQ6IDU1cHhcclxufVxyXG5cclxuLmNvbnRhaW5lci1tYXh7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gIGFsaWduLWl0ZW1zOiBmbGV4LWVuZDtcclxuICBjb2xvcjogI2VhNDMzNVxyXG59XHJcblxyXG5cclxuIl19 */";
+      /***/
+    },
+
+    /***/
+    "ZAI4":
+    /*!*******************************!*\
+      !*** ./src/app/app.module.ts ***!
+      \*******************************/
+
+    /*! exports provided: AppModule */
+
+    /***/
+    function ZAI4(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "AppModule", function () {
+        return AppModule;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/platform-browser */
+      "jhN1");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./app-routing.module */
+      "vY5A");
+      /* harmony import */
+
+
+      var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./app.component */
+      "Sy1n");
+      /* harmony import */
+
+
+      var _pages_landing_landing_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! ./pages/landing/landing.component */
+      "fsYz");
+      /* harmony import */
+
+
+      var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! ./components/navbar/navbar.component */
+      "hrlM");
+      /* harmony import */
+
+
+      var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      /*! ./components/footer/footer.component */
+      "LmEr");
+
+      var AppModule = /*#__PURE__*/_createClass(function AppModule() {
+        _classCallCheck(this, AppModule);
+      });
+
+      AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_landing_landing_component__WEBPACK_IMPORTED_MODULE_5__["LandingComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]],
+        providers: [],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+      })], AppModule);
+      /***/
+    },
+
+    /***/
+    "fsYz":
+    /*!****************************************************!*\
+      !*** ./src/app/pages/landing/landing.component.ts ***!
+      \****************************************************/
+
+    /*! exports provided: LandingComponent */
+
+    /***/
+    function fsYz(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "LandingComponent", function () {
+        return LandingComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _raw_loader_landing_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! raw-loader!./landing.component.html */
+      "JqLZ");
+      /* harmony import */
+
+
+      var _landing_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./landing.component.css */
+      "YQZ2");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+
+      var LandingComponent = /*#__PURE__*/function () {
+        function LandingComponent() {
+          _classCallCheck(this, LandingComponent);
+        }
+
+        _createClass(LandingComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }]);
+
+        return LandingComponent;
+      }();
+
+      LandingComponent.ctorParameters = function () {
+        return [];
+      };
+
+      LandingComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-landing',
+        template: _raw_loader_landing_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_landing_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+      })], LandingComponent);
+      /***/
+    },
+
+    /***/
+    "hrlM":
+    /*!*******************************************************!*\
+      !*** ./src/app/components/navbar/navbar.component.ts ***!
+      \*******************************************************/
+
+    /*! exports provided: NavbarComponent */
+
+    /***/
+    function hrlM(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "NavbarComponent", function () {
+        return NavbarComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _raw_loader_navbar_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! raw-loader!./navbar.component.html */
+      "S6iF");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+
+      var NavbarComponent = /*#__PURE__*/function () {
+        function NavbarComponent() {
+          _classCallCheck(this, NavbarComponent);
+
+          this.showMenu = false;
+        }
+
+        _createClass(NavbarComponent, [{
+          key: "toggleNavbar",
+          value: function toggleNavbar() {
+            this.showMenu = !this.showMenu;
+          }
+        }]);
+
+        return NavbarComponent;
+      }();
+
+      NavbarComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-navbar',
+        template: _raw_loader_navbar_component_html__WEBPACK_IMPORTED_MODULE_1__["default"]
+      })], NavbarComponent);
+      /***/
+    },
+
+    /***/
+    "vY5A":
+    /*!***************************************!*\
+      !*** ./src/app/app-routing.module.ts ***!
+      \***************************************/
+
+    /*! exports provided: AppRoutingModule */
+
+    /***/
+    function vY5A(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function () {
+        return AppRoutingModule;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "mrSG");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/router */
+      "tyNb");
+      /* harmony import */
+
+
+      var _pages_landing_landing_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./pages/landing/landing.component */
+      "fsYz");
+
+      var routes = [{
+        path: '',
+        component: _pages_landing_landing_component__WEBPACK_IMPORTED_MODULE_3__["LandingComponent"]
+      }];
+
+      var AppRoutingModule = /*#__PURE__*/_createClass(function AppRoutingModule() {
+        _classCallCheck(this, AppRoutingModule);
+      });
+
+      AppRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+      })], AppRoutingModule);
+      /***/
+    },
+
+    /***/
+    "zUnb":
+    /*!*********************!*\
+      !*** ./src/main.ts ***!
+      \*********************/
+
+    /*! no exports provided */
+
+    /***/
+    function zUnb(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! @angular/core */
+      "fXoL");
+      /* harmony import */
+
+
+      var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/platform-browser-dynamic */
+      "a3Wg");
+      /* harmony import */
+
+
+      var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./app/app.module */
+      "ZAI4");
+      /* harmony import */
+
+
+      var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./environments/environment */
+      "AytR");
+
+      if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+      }
+
+      Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])["catch"](function (err) {
+        return console.error(err);
+      });
+      /***/
+    },
+
+    /***/
+    "zn8P":
+    /*!******************************************************!*\
+      !*** ./$$_lazy_route_resource lazy namespace object ***!
+      \******************************************************/
+
+    /*! no static exports found */
+
+    /***/
+    function zn8P(module, exports) {
+      function webpackEmptyAsyncContext(req) {
+        // Here Promise.resolve().then() is used instead of new Promise() to prevent
+        // uncaught exception popping up in devtools
+        return Promise.resolve().then(function () {
+          var e = new Error("Cannot find module '" + req + "'");
+          e.code = 'MODULE_NOT_FOUND';
+          throw e;
+        });
+      }
+
+      webpackEmptyAsyncContext.keys = function () {
+        return [];
+      };
+
+      webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+      module.exports = webpackEmptyAsyncContext;
+      webpackEmptyAsyncContext.id = "zn8P";
+      /***/
+    }
+  }, [[0, "runtime", "vendor"]]]);
+})();
+//# sourceMappingURL=main-es5.js.map
