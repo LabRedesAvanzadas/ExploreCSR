@@ -1,4 +1,5 @@
 <app-navbar></app-navbar>
+
 <main>
   <div
     class="relative pt-16 pb-32 flex content-center items-center justify-center min-75"
@@ -8,27 +9,20 @@
     >
       <span
         id="blackOverlay"
-        class="w-full h-full absolute opacity-75 bg-black"
+        class="w-full h-full absolute opacity-25 bg-black"
       ></span>
     </div>
     <div class="container relative mx-auto">
       <div class="items-center flex flex-wrap">
         <div class="w-full lg:w-6/10 px-4 ml-auto mr-auto text-center">
           <div class="header-container">
+            <img class="img-fit-80"  src="assets/img/explore_logo.png">
             <div class="logo-cont">
-              <img class="img-fit" src="assets/img/logo-espol-blanco.png">
-              <h1 class="text-white font-semibold text-3xl ml-4 mr-4">&</h1>
-              <img class="img-fit-55"  src="assets/img/google_research_colorful.png">
+              <img class="img-logo-sm" src="assets/img/logo-espol-blanco.png">
+              <img class="img-logo-bg" src="assets/img/google_research_colorful.png">
+              <img class="img-logo-sm" src="assets/img/smartx_logo.png">
             </div>
-
-
-            <h1 class="text-white font-semibold text-5xl">
-              exploreCSR 2023, Guayaquil-EC.
-            </h1>
-            <h3 class="mt-4 text-lg text-gray-300">
-              SmartX + exploreCSR: Explora tu carrera + Machine Learning
-            </h3>
-            <button class="glow-on-hover text-white font-semibold text-1xl" type="button" (click)="scroll(register)">Inscripciones</button>
+            <button class="glow-on-hover text-white font-semibold text-1xl" type="button" (click)="scroll(register)">Conoce los demos</button>
           </div>
         </div>
       </div>
@@ -572,6 +566,7 @@
         </owl-carousel-o>
   </section>
 
+
   <section #register class="pb-20 relative block bg-gray-900">
     <div
       class="height-80 bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -728,5 +723,7 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--  </section>-->
+
 </main>
+
 <!--<app-footer></app-footer>-->

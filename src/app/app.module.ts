@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {AngularFullpageModule} from '@fullpage/angular-fullpage';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {CarouselModule} from 'ngx-owl-carousel-o';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    AngularFullpageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
