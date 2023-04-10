@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {OwlOptions} from 'ngx-owl-carousel-o';
+
 
 @Component({
   selector: 'app-landing',
@@ -7,12 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 500,
+    autoplay: true,
+    navText: ['&#8249', '&#8250;'],
+    nav: true
+  }
 
   ngOnInit() {
+
   }
 
   scroll(el: HTMLElement) {
     el.scrollIntoView();
   }
+
+
 }
+

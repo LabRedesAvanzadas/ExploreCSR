@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CarouselModule} from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
