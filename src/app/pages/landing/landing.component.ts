@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 import { options, fullpage_api } from 'fullpage.js/dist/fullpage.extensions.min';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -22,7 +23,7 @@ export class LandingComponent implements OnInit {
     nav: true
   };
 
-  constructor() {
+  constructor(private router: Router) {
     this.config = {
 
       // fullpage options

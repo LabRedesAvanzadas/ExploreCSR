@@ -9,13 +9,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CarouselModule} from 'ngx-owl-carousel-o';
 import {AngularFullpageModule} from '@fullpage/angular-fullpage';
+import { DemosComponent } from './pages/demos/demos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    DemosComponent
   ],
   imports: [
     BrowserModule,
