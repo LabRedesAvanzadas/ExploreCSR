@@ -8,7 +8,7 @@ text-align: -webkit-center;
 }
 
 .image{
-  height: 100%;
+  height: 100vh;
 }
 
 #menu li {
@@ -53,4 +53,11 @@ text-align: -webkit-center;
   padding: 0;
   margin:0;
   text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  #menu{
+    position:fixed;
+    top:5vh;
+  }
 }
