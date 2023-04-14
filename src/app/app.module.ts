@@ -10,6 +10,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CarouselModule} from 'ngx-owl-carousel-o';
 import {AngularFullpageModule} from '@fullpage/angular-fullpage';
 import { DemosComponent } from './pages/demos/demos.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/moment';
+import * as moment from 'moment';
+
+export function momentAdapterFactory() {
+  return adapterFactory(moment);
+};
 
 @NgModule({
   declarations: [
@@ -24,7 +31,8 @@ import { DemosComponent } from './pages/demos/demos.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory })
   ],
   providers: [],
   bootstrap: [AppComponent]
