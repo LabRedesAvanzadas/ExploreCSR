@@ -233,26 +233,30 @@
   <section class="relative py-20">
     <div class="container mx-auto px-4">
       <div class="items-center flex flex-wrap flex-col">
-        <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <div
-            class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
-          >
-            <i class="fas fa-road text-xl"></i>
+        <div class="w-full md:w-8/12">
+          <div class="">
+            <div
+              class="text-pink-600 p-3 text-center inline-flex items-center justify-center h-16 "
+            >
+              <i class="fas fa-road text-xl"></i>
+              <h3 class="pl-10 text-3xl font-semibold">Roadmap</h3>
+            </div>
+            <div class="flex flex-wrap mt-12 justify-center space-around">
+              <p-timeline class="w-full" [value]="timelinEvents" layout="horizontal">
+                <ng-template pTemplate="content" let-event>
+                  <small class="p-text-secondary">{{event.date}}</small>
+                </ng-template>
+                <ng-template pTemplate="opposite" let-event>
+                  {{event.status}}
+                </ng-template>
+              </p-timeline>
+            </div>
           </div>
-          <h3 class="text-3xl font-semibold">Roadmap</h3>
-          <div class="flex flex-wrap mt-12 justify-center space-around">
-            <img
-              alt="..."
-              class="max-w-full rounded-lg shadow-lg"
-              src="./assets/img/flujo_evento.png"
-            />
-          </div>
-
         </div>
         <div class="w-full md:w-8/12">
           <div class="">
             <div
-              class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 "
+              class="text-pink-600 p-3 text-center inline-flex items-center justify-center h-16 "
             >
               <i class="fas fa-calendar text-xl"></i>
               <h3 class="pl-10 text-3xl font-semibold">Cronograma</h3>
@@ -262,7 +266,11 @@
                 class="w-full"
                 [viewDate]="viewDate"
                 [events]="events"
-                [activeDayIsOpen]="true"
+                [locale]="locale"
+                [weekStartsOn]="weekStartsOn"
+                [weekendDays]="weekendDays"
+                [activeDayIsOpen]="activeDayIsOpen"
+                (dayClicked)="dayClicked($event.day)"
                 (beforeViewRender)="beforeMonthViewRender($event)"
               >
               </mwl-calendar-month-view>

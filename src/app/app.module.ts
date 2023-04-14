@@ -13,6 +13,10 @@ import { DemosComponent } from './pages/demos/demos.component';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/moment';
 import * as moment from 'moment';
+import {TimelineModule} from 'primeng/timeline';
+import {registerLocaleData} from '@angular/common';
+import localeEs from '@angular/common/locales/es-EC';
+registerLocaleData(localeEs);
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -32,7 +36,8 @@ export function momentAdapterFactory() {
     BrowserAnimationsModule,
     CarouselModule,
     AngularFullpageModule,
-    CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory })
+    CalendarModule.forRoot({provide: DateAdapter, useFactory: momentAdapterFactory}),
+    TimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,25 @@
 @import url("../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 @import url(~fullpage.js/dist/fullpage.min.css);
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("../node_modules/primeng/resources/themes/saga-blue/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
 
 
+@keyframes mymove {
+  25% {border-color: blue;}
+  50% {border-color: green;}
+  75% {border-color: yellow;}
+  100% {border-color: red;}
+}
 
+.p-timeline-event-opposite {
+  text-align: left !important
+}
 
-
-
+.p-timeline-event-marker{
+  border: 2px solid red;
+  animation: mymove 5s infinite;
+}
 
 
 .logo-cont{
