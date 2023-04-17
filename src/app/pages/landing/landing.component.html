@@ -22,7 +22,11 @@
               <img class="img-logo-bg" src="assets/img/google_research_colorful.png">
               <img class="img-logo-sm" src="assets/img/smartx_logo.png">
             </div>
-            <button class="glow-on-hover text-white font-semibold text-1xl" type="button" [routerLink]="['/demos']">Conoce los demos</button>
+            <div class="d-flex w-full">
+              <button class="glow-on-hover text-white font-semibold text-1xl" type="button" [routerLink]="['/demos']">Conoce los demos</button>
+              <button class="glow-on-hover text-white font-semibold text-1xl" type="button" (click)="scroll(cronograma)">Ver cronograma</button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -253,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-8/12">
+        <div #cronograma class="w-full md:w-8/12">
           <div class="">
             <div
               class="text-pink-600 p-3 text-center inline-flex items-center justify-center h-16 "

@@ -195,7 +195,7 @@ export class LandingComponent implements OnInit {
       },
     },
     {
-      title: '9h00 : Experiencia internacional - Brenda',
+      title: '9h00 : Experiencia internacional - Brenda Cobeña',
       color: {
         primary: '#ef00ff',
         secondary: '#FAE3E3',
@@ -207,7 +207,7 @@ export class LandingComponent implements OnInit {
       },
     },
     {
-      title: '9h00 : Experiencia internacional - Brenda',
+      title: '9h00 : Experiencia internacional - Brenda Cobeña',
       color: {
         primary: '#ef00ff',
         secondary: '#FAE3E3',
@@ -219,7 +219,7 @@ export class LandingComponent implements OnInit {
       },
     },
     {
-      title: '14h00 : Experiencia internacional - Cristina',
+      title: '14h00 : Experiencia internacional - Cristina Guerrero',
       color: {
         primary: '#ef00ff',
         secondary: '#FAE3E3',
@@ -231,7 +231,7 @@ export class LandingComponent implements OnInit {
       },
     },
     {
-      title: '14h00 : Experiencia internacional - Cristina',
+      title: '14h00 : Experiencia internacional - Cristina Guerrero',
       color: {
         primary: '#ef00ff',
         secondary: '#FAE3E3',
