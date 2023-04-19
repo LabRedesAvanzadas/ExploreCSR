@@ -10,10 +10,56 @@ import {
   CalendarMonthViewDay,
   CalendarView, DAYS_OF_WEEK,
 } from 'angular-calendar';
-import {  startOfDay,  endOfDay,  subDays,  addDays,  endOfMonth,  isSameDay,  isSameMonth,  addHours,} from 'date-fns';
+import {
+  subMonths,
+  addMonths,
+  addDays,
+  addWeeks,
+  subDays,
+  subWeeks,
+  startOfMonth,
+  endOfMonth,
+  startOfWeek,
+  endOfWeek,
+  startOfDay,
+  endOfDay, isSameDay, isSameMonth,
+} from 'date-fns';
 import { TimelineModule } from 'primeng/timeline';
 import * as moment from 'moment';
 import { CustomDateFormatter } from './custom-date-formatter-provider';
+type CalendarPeriod = 'day' | 'week' | 'month';
+
+function addPeriod(period: CalendarPeriod, date: Date, amount: number): Date {
+  return {
+    day: addDays,
+    week: addWeeks,
+    month: addMonths,
+  }[period](date, amount);
+}
+
+function subPeriod(period: CalendarPeriod, date: Date, amount: number): Date {
+  return {
+    day: subDays,
+    week: subWeeks,
+    month: subMonths,
+  }[period](date, amount);
+}
+
+function startOfPeriod(period: CalendarPeriod, date: Date): Date {
+  return {
+    day: startOfDay,
+    week: startOfWeek,
+    month: startOfMonth,
+  }[period](date);
+}
+
+function endOfPeriod(period: CalendarPeriod, date: Date): Date {
+  return {
+    day: endOfDay,
+    week: endOfWeek,
+    month: endOfMonth,
+  }[period](date);
+}
 
 @Component({
   selector: 'app-landing',
@@ -58,6 +104,40 @@ export class LandingComponent implements OnInit {
   minDate: Date = new Date("2023-04-21");
   maxDate: Date = new Date("2023-05-06");
   activeDayIsOpen: boolean = true;
+  prevBtnDisabled: boolean = false;
+  nextBtnDisabled: boolean = false;
+
+  today(): void {
+    this.changeDate(new Date());
+  }
+
+  decrement(): void {
+    this.changeDate(subPeriod(this.view, this.viewDate, 1));
+  }
+  increment(): void {
+    this.changeDate(addPeriod(this.view, this.viewDate, 1));
+  }
+  changeDate(date: Date): void {
+    this.viewDate = date;
+    this.dateOrViewChanged();
+  }
+  dateOrViewChanged(): void {
+    this.prevBtnDisabled = !this.dateIsValid(
+      endOfPeriod(this.view, subPeriod(this.view, this.viewDate, 2))
+    );
+    this.nextBtnDisabled = !this.dateIsValid(
+      startOfPeriod(this.view, addPeriod(this.view, this.viewDate, 2))
+    );
+    if (this.viewDate < this.minDate) {
+      this.changeDate(this.minDate);
+    } else if (this.viewDate > this.maxDate) {
+      this.changeDate(this.maxDate);
+    }
+  }
+  dateIsValid(date: Date): boolean {
+    return date >= this.minDate && date <= this.maxDate;
+  }
+
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {
@@ -238,6 +318,18 @@ export class LandingComponent implements OnInit {
       },
       start: addDays(startOfDay(new Date('2023-04-27')),1),
       end: addDays(endOfDay(new Date('2023-04-27')),1),
+      meta: {
+        incrementsBadgeTotal: true,
+      },
+    },
+    {
+      title: '14h00 : Experiencia internacional - Cristina Guerrero',
+      color: {
+        primary: '#ef00ff',
+        secondary: '#FAE3E3',
+      },
+      start: addDays(startOfDay(new Date('2023-05-03')),1),
+      end: addDays(endOfDay(new Date('2023-05-03')),1),
       meta: {
         incrementsBadgeTotal: true,
       },

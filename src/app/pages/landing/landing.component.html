@@ -23,8 +23,8 @@
               <img class="img-logo-sm" src="assets/img/smartx_logo.png">
             </div>
             <div class="d-flex w-full">
-              <button class="glow-on-hover text-white font-semibold text-1xl" type="button" [routerLink]="['/demos']">Conoce los demos</button>
-              <button class="glow-on-hover text-white font-semibold text-1xl" type="button" (click)="scroll(cronograma)">Ver cronograma</button>
+              <button class="glow-on-hover text-white font-semibold text-1xl m-1" type="button" [routerLink]="['/demos']">Conoce los demos</button>
+              <button class="glow-on-hover text-white font-semibold text-1xl m-1" type="button" (click)="scroll(cronograma)">Ver cronograma</button>
             </div>
 
           </div>
@@ -266,6 +266,25 @@
               <h3 class="pl-10 text-3xl font-semibold">Cronograma</h3>
             </div>
             <div class="flex flex-wrap mt-12 justify-center space-around">
+              <div class="col-md-4">
+                <div class="btn-group">
+                  <button
+                    class="font-black btn btn-primary"
+                    (click)="decrement()"
+                    [disabled]="prevBtnDisabled"
+                  >
+                    <
+                  </button>
+                  <button class="font-black  ml-3 mr-3 btn btn-outline-secondary" (click)="today()">Hoy</button>
+                  <button
+                    class="font-black  btn btn-primary"
+                    (click)="increment()"
+                    [disabled]="nextBtnDisabled"
+                  >
+                    >
+                  </button>
+                </div>
+              </div>
               <mwl-calendar-month-view
                 class="w-full"
                 [viewDate]="viewDate"
@@ -398,24 +417,6 @@
                   <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Director
                   </p>
-<!--                  <div class="mt-6">-->
-<!--                    <button-->
-<!--                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"-->
-<!--                      type="button"-->
-<!--                    >-->
-<!--                      <i class="fab fa-twitter"></i></button-->
-<!--                    ><button-->
-<!--                    class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"-->
-<!--                    type="button"-->
-<!--                  >-->
-<!--                    <i class="fab fa-facebook-f"></i></button-->
-<!--                  ><button-->
-<!--                    class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"-->
-<!--                    type="button"-->
-<!--                  >-->
-<!--                    <i class="fab fa-dribbble"></i>-->
-<!--                  </button>-->
-<!--                  </div>-->
                 </div>
               </div>
           </ng-template>
@@ -455,14 +456,14 @@
             <div class="px-6">
               <img
                 alt="..."
-                src="assets/img/mentor_jocellyn.jfif"
+                src="assets/img/advisor_christian.png"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
               <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Ing. Jocellyn Luna</h5>
+                <h5 class="text-xl font-bold">Ph.D. Christian Galarza</h5>
                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  Organización/Tutor
+                  Advisor
                 </p>
               </div>
             </div>
@@ -471,14 +472,14 @@
             <div class="px-6">
               <img
                 alt="..."
-                src="assets/img/mentor_carlos.jfif"
+                src="assets/img/advisor_edwin.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
               <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Ing. Carlos Cedeño</h5>
+                <h5 class="text-xl font-bold">Ph.D. Edwin Valarezo</h5>
                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  Organización/Tutor
+                  Advisor
                 </p>
               </div>
             </div>
@@ -487,14 +488,46 @@
             <div class="px-6">
               <img
                 alt="..."
-                src="./assets/img/sandra_coello.jfif"
+                src="assets/img/advisor_cristina.jpg"
                 class="shadow-lg rounded-full max-w-full mx-auto"
                 style="max-width: 120px;"
               />
               <div class="pt-6 text-center">
-                <h5 class="text-xl font-bold">Ing. Sandra Coello</h5>
+                <h5 class="text-xl font-bold">Ph.D. Cristina Guerrero</h5>
                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                  Organización
+                  Advisor
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="assets/img/advisor_veronica.png"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Ph.D. Verónica Duarte</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Advisor
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="assets/img/advisor_rafael.png"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Ph.D. Rafael Rivadeneira</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Advisor
                 </p>
               </div>
             </div>
@@ -511,6 +544,54 @@
                 <h5 class="text-xl font-bold">Msc. Christopher Vaccaro</h5>
                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                   Tutor
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="assets/img/mentor_jocellyn.jfif"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Ing. Jocellyn Luna</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Org - Tutor
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="assets/img/mentor_carlos.jfif"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Ing. Carlos Cedeño</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Org - Tutor
+                </p>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template carouselSlide class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img
+                alt="..."
+                src="./assets/img/sandra_coello.jfif"
+                class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Ing. Sandra Coello</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Organización
                 </p>
               </div>
             </div>
