@@ -24,7 +24,7 @@
             </div>
             <div class="d-flex w-full">
               <button class="glow-on-hover text-white font-semibold text-1xl m-1" type="button" [routerLink]="['/demos']">Conoce los demos</button>
-              <button class="glow-on-hover text-white font-semibold text-1xl m-1" type="button" (click)="scroll(cronograma)">Ver cronograma</button>
+              <button class="glow-on-hover text-white font-semibold text-1xl m-1" type="button" (click)="showCron(cronograma)">Ver cronograma</button>
             </div>
 
           </div>
@@ -761,3 +761,27 @@
 
 <!--<app-footer></app-footer>-->
 
+<ngx-smart-modal #myModal1 identifier="myModal1" style="max-width: none">
+  <img
+    alt="..."
+    src="./assets/img/evento1_carmen.png"
+    class="shadow-lg"
+    style="width: 80vw"
+  />
+</ngx-smart-modal>
+<ngx-smart-modal #myModal2 identifier="myModal2" style="max-width: none">
+  <img
+    alt="..."
+    src="./assets/img/evento_dl.png"
+    class="shadow-lg"
+    style="width: 80vw"
+  />
+</ngx-smart-modal>
+<ngx-smart-modal #myModal3 identifier="myModal3" style="max-width: none">
+  <img
+    alt="..."
+    src="./assets/img/evento_panel.png"
+    class="shadow-lg"
+    style="width: 80vw"
+  />
+</ngx-smart-modal>

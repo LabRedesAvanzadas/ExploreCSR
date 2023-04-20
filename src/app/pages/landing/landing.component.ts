@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectionStrategy, ViewChild, ElementRef} from '@angular/core';
+import {Component, OnInit, ChangeDetectionStrategy, ViewChild, ElementRef, TemplateRef} from '@angular/core';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 import { options, fullpage_api } from 'fullpage.js/dist/fullpage.extensions.min';
 import {Router} from '@angular/router';
@@ -27,6 +27,8 @@ import {
 import { TimelineModule } from 'primeng/timeline';
 import * as moment from 'moment';
 import { CustomDateFormatter } from './custom-date-formatter-provider';
+import {NgxSmartModalService} from 'ngx-smart-modal';
+import {ToastrService} from 'ngx-toastr';
 type CalendarPeriod = 'day' | 'week' | 'month';
 
 function addPeriod(period: CalendarPeriod, date: Date, amount: number): Date {
@@ -75,7 +77,10 @@ function endOfPeriod(period: CalendarPeriod, date: Date): Date {
 
 export class LandingComponent implements OnInit {
 
-  constructor(private router: Router) {
+  @ViewChild(TemplateRef, { static: false }) tpl: TemplateRef<any>;
+
+  constructor(private router: Router, public ngxSmartModalService: NgxSmartModalService,
+              private toastr: ToastrService) {
     this.config = {
 
       // fullpage options
@@ -114,7 +119,38 @@ export class LandingComponent implements OnInit {
       label: '<i class="fas fa-info-circle"></i>',
       a11yLabel: 'Info',
       onClick: ({ event }: { event: CalendarEvent }): void => {
+        this.router.navigate(['demos']);
+      },
+    },
+  ];
+
+  actions_carmen: CalendarEventAction[] = [
+    {
+      label: '<i class="fas fa-info-circle"></i>',
+      a11yLabel: 'Info',
+      onClick: ({ event }: { event: CalendarEvent }): void => {
         // this.router.navigate(['demos']);
+        this.ngxSmartModalService.getModal('myModal1').open();
+      },
+    },
+  ];
+  actions_dl: CalendarEventAction[] = [
+    {
+      label: '<i class="fas fa-info-circle"></i>',
+      a11yLabel: 'Info',
+      onClick: ({ event }: { event: CalendarEvent }): void => {
+        // this.router.navigate(['demos']);
+        this.ngxSmartModalService.getModal('myModal2').open();
+      },
+    },
+  ];
+  actions_conferencia: CalendarEventAction[] = [
+    {
+      label: '<i class="fas fa-info-circle"></i>',
+      a11yLabel: 'Info',
+      onClick: ({ event }: { event: CalendarEvent }): void => {
+        // this.router.navigate(['demos']);
+        this.ngxSmartModalService.getModal('myModal3').open();
       },
     },
   ];
@@ -155,6 +191,7 @@ export class LandingComponent implements OnInit {
       meta: {
         incrementsBadgeTotal: true,
       },
+      actions: this.actions_carmen
     },
     {
       title: '10h30 : Clase Práctica 1 - Grupo estudiantil TAWS',
@@ -349,6 +386,7 @@ export class LandingComponent implements OnInit {
       meta: {
         incrementsBadgeTotal: true,
       },
+      actions: this.actions_dl
     },
     {
       title: '10h00 : Clase Práctica DL - Grupo estudiantil CIAP',
@@ -385,7 +423,7 @@ export class LandingComponent implements OnInit {
       meta: {
         incrementsBadgeTotal: true,
       },
-      actions: this.actions
+      actions: this.actions_conferencia
     },
     {
       title: '15h30 : Panel de discusión - IA en el campo Laboral - Empresas invitadas, Ph.D. José Córdova',
@@ -398,7 +436,7 @@ export class LandingComponent implements OnInit {
       meta: {
         incrementsBadgeTotal: true,
       },
-      actions: this.actions
+      actions: this.actions_conferencia
     },
     {
       title: '9h00 : Clase Teórica DL - Ph.D. Christian Tutivén ',
@@ -484,7 +522,6 @@ export class LandingComponent implements OnInit {
       meta: {
         incrementsBadgeTotal: true,
       },
-      actions: this.actions
     },
     {
       title: '15h30 : Premiación y cierre',
@@ -584,6 +621,11 @@ export class LandingComponent implements OnInit {
 
   scroll(el: HTMLElement) {
     el.scrollIntoView();
+  }
+
+  showCron(el: HTMLElement) {
+    el.scrollIntoView();
+    this.toastr.info('Puedes dar click en cada fecha para conocer el desglose. Algunos eventos tienen un ícono de info para mas detalles', 'Ver calendario');
   }
 
 

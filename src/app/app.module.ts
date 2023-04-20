@@ -16,6 +16,8 @@ import * as moment from 'moment';
 import {TimelineModule} from 'primeng/timeline';
 import {registerLocaleData} from '@angular/common';
 import localeEs from '@angular/common/locales/es-EC';
+import {NgxSmartModalModule} from 'ngx-smart-modal';
+import {ToastrModule} from 'ngx-toastr';
 registerLocaleData(localeEs);
 
 export function momentAdapterFactory() {
@@ -37,7 +39,9 @@ export function momentAdapterFactory() {
     CarouselModule,
     AngularFullpageModule,
     CalendarModule.forRoot({provide: DateAdapter, useFactory: momentAdapterFactory}),
-    TimelineModule
+    TimelineModule,
+    NgxSmartModalModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
