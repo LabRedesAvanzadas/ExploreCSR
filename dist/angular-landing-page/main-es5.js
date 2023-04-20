@@ -2015,8 +2015,7 @@
             end: Object(date_fns__WEBPACK_IMPORTED_MODULE_2__["addDays"])(Object(date_fns__WEBPACK_IMPORTED_MODULE_2__["endOfDay"])(new Date('2023-05-06')), 1),
             meta: {
               incrementsBadgeTotal: true
-            },
-            actions: this.actions
+            }
           }, {
             title: '15h00 : Exposición de posters - Identificación de problemáticas',
             color: {

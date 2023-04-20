@@ -509,7 +509,6 @@ export class LandingComponent implements OnInit {
       meta: {
         incrementsBadgeTotal: true,
       },
-      actions: this.actions
     },
     {
       title: '15h00 : Exposición de posters - Identificación de problemáticas',

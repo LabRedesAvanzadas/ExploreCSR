@@ -5240,6 +5240,10 @@
     transform: translate3d(0, 0, 0); }.nsm-dialog-animation-btt.nsm-dialog-close {
     transform: translate3d(0, 50%, 0); }.nsm-dialog{
   max-width: 60vw;
+}@media only screen and (max-width: 800px) {
+  .nsm-dialog{
+    max-width: 100vw;
+  }
 }@keyframes mymove {
   25% {border-color: blue;}
   50% {border-color: green;}
